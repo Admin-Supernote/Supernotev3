@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperNote - School System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>SuperNote</h1>
+    <p>The Complete School Management System</p>
+  </header>
+
+  <!-- Login Section -->
+  <main id="loginSection">
+    <h2>Login</h2>
+    <p>Select your role:</p>
+    <div id="roleSelection">
+      <button class="roleBtn" data-role="student">👦 Student</button>
+      <button class="roleBtn" data-role="parent">👨 Parent</button>
+      <button class="roleBtn" data-role="teacher">🧑‍🏫 Teacher</button>
+      <button class="roleBtn" data-role="principal">👩‍💼 Principal</button>
+      <button class="roleBtn" data-role="surveillant">👨‍💼 Surveillant</button>
+      <button class="roleBtn" data-role="technician">👨🏻‍💻 Technician</button>
+    </div>
+
+    <form id="loginForm" style="display: none;">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+  </main>
+
+  <!-- Dashboard Section -->
+  <main id="dashboard" style="display: none;">
+    <h2 id="dashboardTitle"></h2>
+    <div id="dashboardContent"></div>
+    <button id="logoutBtn">Logout</button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
