@@ -1,0 +1,72 @@
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #0066cc;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #004a99;
+}
+
+/* Login Form */
+form {
+  margin: 20px 0;
+}
+
+#roleSelection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.roleBtn {
+  width: 150px;
+  text-align: center;
+}
+
+/* Dashboard */
+#dashboard {
+  text-align: center;
+  margin: 50px;
+}
+
+h3, h4, h5 {
+  color: #333;
+}
+
+/* Forms in technician panel */
+form input, form select {
+  margin: 5px 0;
+  padding: 5px;
+  width: 90%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form button {
+  margin-top: 10px;
+  width: 100%;
+}
